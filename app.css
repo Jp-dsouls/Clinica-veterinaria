@@ -608,6 +608,10 @@ section.img,
     margin-right: initial;
     margin-left : initial
   }
+
+  .first-row {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 767px) {
