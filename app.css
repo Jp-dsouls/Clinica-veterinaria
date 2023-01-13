@@ -883,6 +883,11 @@ section.img,
   .section-detail .text-1 {
     letter-spacing: 7px;
   }
+
+  .section-detail .text-2 {
+    font-size    : 30px;
+    margin-bottom: 10px;
+  }
 }
 
 /* SECCION FRASE */
@@ -1205,7 +1210,7 @@ section.img,
 
   .contact .text-2 {
     margin-left: 0;
-    text-align: center !important;
+    text-align : center !important;
   }
 
   .contact .form-1 {
