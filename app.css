@@ -1,6 +1,7 @@
 :root {
   --color-white       : #ffffff;
   --color-black       : #0f0f0f;
+  --color-gray        : #f3f3f3;
   --gradient-white-to-: linear-gradient(90deg, rgba(243, 243, 243, 1) 0%, rgba(246, 246, 246, 1) 50%, rgba(223, 223, 223, 1) 100%);
   --light             : rgba();
 }
@@ -69,6 +70,10 @@ h1.title {
   background-color: var(--color-white);
 }
 
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
 .color-white {
   color: var(--color-white);
 }
@@ -94,6 +99,20 @@ h1.title {
 
 .btn-black:hover {
   background-color: var(--color-black);
+}
+
+.form-input {
+  width          : 300px;
+  display        : flex;
+  justify-content: end
+}
+
+.input-text {
+  padding: 10px !important;
+}
+
+.input-submit {
+  padding: 10px 12px !important;
 }
 
 @media (min-width: 1200px) {
@@ -208,16 +227,18 @@ section.img,
 
 @media (max-width: 575px) {
   .section-banner .sheet-1 {
-    min-height: 462px
+    min-height: 462px;
+    width     : 310px;
   }
 
   .section-banner .text-1 {
-    width: 340px
+    width : 300px;
+    margin: 5px 0 0 0;
   }
 
   .section-banner .text-2 {
-    width    : 340px;
-    font-size: 3.75rem
+    width    : 300px;
+    font-size: 2.75rem
   }
 }
 
@@ -300,9 +321,10 @@ section.img,
 }
 
 .section-grid .img-2 {
-  min-height         : 289px;
-  background-image   : url("//images03.nicepage.io/a1389d7bc73adea1e1c1fb7e/db0d65fd07dc579fa9d5ebfd/pexelsphoto662417.jpeg");
-  background-position: 0% 6.29%
+  min-height            : 289px;
+  /* background-image   : url("//images03.nicepage.io/a1389d7bc73adea1e1c1fb7e/db0d65fd07dc579fa9d5ebfd/pexelsphoto662417.jpeg"); */
+  background-image      : url("./imgs/almu.jpg");
+  background-position   : 0% 6.29%
 }
 
 .section-grid .container-layout-5 {
@@ -610,7 +632,9 @@ section.img,
   }
 
   .section-mission .layout-cell-3 {
-    min-height: 100px
+    min-height: 100px;
+    min-width : 310px;
+    padding   : 0;
   }
 
   .section-mission .container-layout-3 {
@@ -662,7 +686,8 @@ section.img,
   .section-mission .img-2 {
     height      : 271px;
     margin-right: initial;
-    margin-left : initial
+    margin-left : initial;
+    width       : 300px;
   }
 }
 
@@ -681,7 +706,7 @@ section.img,
 }
 
 .section-detail .container-layout-1 {
-  padding: 60px 30px
+  padding: 60px 10px
 }
 
 .section-detail .text-1 {
@@ -699,7 +724,8 @@ section.img,
 }
 
 .section-detail .img-1 {
-  background-image   : url("//images03.nicepage.io/a1389d7bc73adea1e1c1fb7e/d719a4f46ee35c3eac2f62f2/pexelsphoto3621726.jpeg");
+  /* background-image   : url("//images03.nicepage.io/a1389d7bc73adea1e1c1fb7e/d719a4f46ee35c3eac2f62f2/pexelsphoto3621726.jpeg"); */
+  background-image   : url("./imgs/almu&azulito.jpg");
   background-position: 50% 50%;
   min-height         : 575px
 }
@@ -844,6 +870,18 @@ section.img,
 
   .section-detail .layout-cell-3 {
     min-height: 327px
+  }
+
+  .section-detail .layout-cell-1 {
+    min-width: 293px;
+  }
+
+  .section-detail .container-layout-1 {
+    padding: 0;
+  }
+
+  .section-detail .text-1 {
+    letter-spacing: 7px;
   }
 }
 
@@ -997,6 +1035,10 @@ section.img,
   .profile .img-1 {
     min-height: 455px
   }
+
+  .profile a {
+    font-size: 15px;
+  }
 }
 
 /* SECCION CONTACTO */
@@ -1041,108 +1083,132 @@ section.img,
   }
 }
 
+@media (max-width: 575px) {
+  .information .sheet-1 {
+    width : 300px;
+    margin: 0;
+  }
+
+  .information .text-1 {
+    font-size: 20px;
+  }
+
+  .information .fa-brands {
+    font-size: 20px !important;
+  }
+}
+
 /* SECCION NO SE QUE */
-.u-section-9 {
+.contact {
   background-image   : url("//images03.nicepage.io/a1389d7bc73adea1e1c1fb7e/92a300c36c3c56bc8ce9510f/pexelsphoto1458916.jpg");
   background-position: 50% 50%
 }
 
-.u-section-9 .sheet-1 {
+.contact .sheet-1 {
   min-height: 500px
 }
 
-.u-section-9 .text-1 {
+.contact .text-1 {
   font-size  : 2.25rem;
   font-family: "Playfair Display", serif;
   margin     : 60px 0 0 584px
 }
 
-.u-section-9 .text-2 {
+.contact .text-2 {
   line-height: 1.8;
   font-size  : 1rem;
   margin     : 20px 0 0 674px
 }
 
-.u-section-9 .u-form-1 {
+.contact .u-form-1 {
   height: 47px;
   margin: 30px 0 60px 641px
 }
 
-.u-section-9 .u-btn-1 {
+.contact .u-btn-1 {
   background-image: none
 }
 
 @media (max-width: 1199px) {
-  .u-section-9 .sheet-1 {
+  .contact .sheet-1 {
     min-height: 412px
   }
 
-  .u-section-9 .text-1 {
+  .contact .text-1 {
     margin-left: 384px
   }
 
-  .u-section-9 .text-2 {
+  .contact .text-2 {
     margin-left: 474px
   }
 
-  .u-section-9 .u-form-1 {
+  .contact .u-form-1 {
     margin-left: 441px
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-9 .sheet-1 {
+  .contact .sheet-1 {
     min-height: 316px
   }
 
-  .u-section-9 .text-1 {
+  .contact .text-1 {
     margin-left: 164px
   }
 
-  .u-section-9 .text-2 {
+  .contact .text-2 {
     margin-left: 254px
   }
 
-  .u-section-9 .u-form-1 {
+  .contact .u-form-1 {
     margin-left: 221px
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-9 {
+  .contact {
     background-position: 88.28% 80.58%;
     background-size    : 140%
   }
 
-  .u-section-9 .sheet-1 {
+  .contact .sheet-1 {
     min-height: 300px
   }
 
-  .u-section-9 .text-1 {
+  .contact .text-1 {
     margin-left: 0
   }
 
-  .u-section-9 .text-2 {
+  .contact .text-2 {
     margin-left: 74px
   }
 
-  .u-section-9 .u-form-1 {
+  .contact .u-form-1 {
     height     : 110px;
     margin-left: 202px
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-9 {
+  .contact .sheet-1 {
+    width: 300px
+  }
+
+  .contact {
     background-position: 94.43% 84.83%;
     background-size    : auto 130%
   }
 
-  .u-section-9 .text-2 {
-    margin-left: 0
+  .contact .text-1 {
+    text-align: center !important;
   }
 
-  .u-section-9 .u-form-1 {
+  .contact .text-2 {
+    margin-left: 0;
+    text-align: center !important;
+  }
+
+  .contact .u-form-1 {
     margin-left: 2px
   }
 }
